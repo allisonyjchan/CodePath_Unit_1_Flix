@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="989.85507246376824" y="76.630434782608702"/>
+            <point key="canvasLocation" x="42" y="450"/>
         </scene>
         <!--Item-->
         <scene sceneID="aKO-0E-ckj">
@@ -91,7 +91,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xhy-Pm-Asa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="82.608695652173921" y="76.630434782608702"/>
+            <point key="canvasLocation" x="43" y="-342"/>
         </scene>
         <!--Movie Details View Controller-->
         <scene sceneID="1bE-kr-jOs">
@@ -137,23 +137,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJe-b9-X2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1915.9420289855075" y="76.630434782608702"/>
+            <point key="canvasLocation" x="41" y="1281"/>
         </scene>
-        <!--Item 2-->
-        <scene sceneID="dxU-Cp-fjB">
+        <!--Item-->
+        <scene sceneID="G71-RD-mnd">
             <objects>
-                <viewController id="4Hd-dc-DHc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ipt-CO-D9V">
+                <viewController id="EF3-Ci-59y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bY6-py-BlX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="y2h-78-2XZ"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <viewLayoutGuide key="safeArea" id="Gh9-Gy-NB2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="PuG-0g-Fyp"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="taF-aQ-O5d"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bFC-1J-wvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Yx-yH-mcP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="83" y="916"/>
+            <point key="canvasLocation" x="1194" y="-342"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GCH-qi-A21">
@@ -167,21 +167,18 @@
                     </tabBar>
                     <connections>
                         <segue destination="G9i-K9-TtI" kind="relationship" relationship="viewControllers" id="9Zp-3v-0pL"/>
-                        <segue destination="4Hd-dc-DHc" kind="relationship" relationship="viewControllers" id="BDj-Q0-FR2"/>
+                        <segue destination="EF3-Ci-59y" kind="relationship" relationship="viewControllers" id="mAp-vm-v7p"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2qU-o5-h2o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-958" y="519"/>
+            <point key="canvasLocation" x="612" y="-1115"/>
         </scene>
     </scenes>
     <resources>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
