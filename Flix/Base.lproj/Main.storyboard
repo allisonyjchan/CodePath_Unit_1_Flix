@@ -74,11 +74,11 @@
             </objects>
             <point key="canvasLocation" x="42" y="450"/>
         </scene>
-        <!--Item-->
+        <!--Now Playing-->
         <scene sceneID="aKO-0E-ckj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G9i-K9-TtI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="qOh-cR-0nc"/>
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="film" catalog="system" id="qOh-cR-0nc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NcV-si-L1o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -139,27 +139,27 @@
             </objects>
             <point key="canvasLocation" x="41" y="1281"/>
         </scene>
-        <!--Item-->
+        <!--Movie Grid View Controller-->
         <scene sceneID="G71-RD-mnd">
             <objects>
-                <viewController id="EF3-Ci-59y" sceneMemberID="viewController">
+                <viewController id="EF3-Ci-59y" customClass="MovieGridViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bY6-py-BlX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Gh9-Gy-NB2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="taF-aQ-O5d"/>
+                    <navigationItem key="navigationItem" id="KCq-ZK-iQ6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Yx-yH-mcP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="-342"/>
+            <point key="canvasLocation" x="1193" y="450"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Item-->
         <scene sceneID="GCH-qi-A21">
             <objects>
                 <tabBarController id="qPY-LM-usO" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="DYK-XO-0VR"/>
+                    <navigationItem key="navigationItem" title="Item" id="DYK-XO-0VR"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="59y-Vz-aYs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -167,16 +167,37 @@
                     </tabBar>
                     <connections>
                         <segue destination="G9i-K9-TtI" kind="relationship" relationship="viewControllers" id="9Zp-3v-0pL"/>
-                        <segue destination="EF3-Ci-59y" kind="relationship" relationship="viewControllers" id="mAp-vm-v7p"/>
+                        <segue destination="wek-GJ-OcH" kind="relationship" relationship="viewControllers" id="mAp-vm-v7p"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2qU-o5-h2o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="612" y="-1115"/>
         </scene>
+        <!--Superhero-->
+        <scene sceneID="bF2-zM-wgv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wek-GJ-OcH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Superhero" image="superhero_tabbar_item" id="taF-aQ-O5d"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oco-uL-xcw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EF3-Ci-59y" kind="relationship" relationship="rootViewController" id="6c2-4z-6qc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e82-ya-iDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192.753623188406" y="-342.39130434782612"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="film" catalog="system" width="128" height="93"/>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
+        <image name="superhero_tabbar_item" width="21" height="23"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
