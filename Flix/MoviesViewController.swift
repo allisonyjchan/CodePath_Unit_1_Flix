@@ -107,6 +107,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         // Pass the selected movie to the details view controller
         let detailsViewController = segue.destination as! MovieDetailsViewController
         detailsViewController.movie = movie
+        
+        // Makes it so that movie cells will not remain highlighted after they
+        // have been selected
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 
